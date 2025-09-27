@@ -11,6 +11,17 @@ local function barra(atrb)
 end
 return result
 end
+
+local function linha(n)
+    io.write("#")
+    for i = 1, n, 1 do
+  local teste = "="
+
+io.write(teste)
+end
+    io.write("#")
+    print("")
+end
 os.execute ("chcp 65001")
 
 --Dados da Criatura
@@ -29,7 +40,7 @@ local intAtrb = 1
 
 
 --R.G.
-print("#===================================#")
+linha(35)
 print("| Foto: "..photo.."                          |")
 print("| Nome: "..monsterName.."                     |")
 print("| Descrição: "..description.."          |")
@@ -43,4 +54,4 @@ print("|      Vida:         " .. barra(lifAtrb).."     |")
 print("|      Velocidade:   " .. barra(spdAtrb).."     |")
 print("|      Inteligência: " .. barra(intAtrb).."     |")
 print("|                                   |")
-print("#===================================#")
+linha(35)
