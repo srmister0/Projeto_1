@@ -25,10 +25,9 @@ end
 os.execute ("chcp 65001")
 
 --Dados da Criatura
-local photo = "👹"
 local monsterName = "Monstro"
 local description = "É um monstro!"
-local emoji = "💣"
+local emoji = "👹"
 local age = 100
 
 --Atributos
@@ -38,10 +37,15 @@ local lifAtrb = 6
 local spdAtrb = 5
 local intAtrb = 1
 
+--Fotografia
+local primeiraLinha = " /\\___/\\"
+local segundaLinha = "(0)   (0)"
+local terceiraLinha = " \\| * |/"
+local quartaLinha = "   V=V"
 
---R.G.
+
+--Frente do R.G.
 linha(35)
-print("| Foto: "..photo.."                          |")
 print("| Nome: "..monsterName.."                     |")
 print("| Descrição: "..description.."          |")
 print("| Emoji: "..emoji.."                         |")
@@ -53,5 +57,21 @@ print("|      Defesa:       " .. barra(defAtrb).."     |")
 print("|      Vida:         " .. barra(lifAtrb).."     |")
 print("|      Velocidade:   " .. barra(spdAtrb).."     |")
 print("|      Inteligência: " .. barra(intAtrb).."     |")
+print("|                                   |")
+linha(35)
+
+--Verso do R.G.
+linha(35)
+print("| Foto:                             |")
+print("|           |-----------|           |")
+print("|           | ".. primeiraLinha.."  |           |")
+print("|           | ".. segundaLinha.." |           |")
+print("|           | ".. terceiraLinha.."  |           |")
+print("|           | ".. quartaLinha.."    |           |")
+print("|           |-----------|           |")
+print("|                                   |")
+print("|            GRAURRRRR!!            |")
+print("|          ===============          |")
+print("|             |Rubrica|             |")
 print("|                                   |")
 linha(35)
